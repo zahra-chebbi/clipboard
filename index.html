@@ -27,23 +27,138 @@
         margin: 0;
         padding: 0;
       }
+      body {
+        background-image: url(images/bg-header-desktop.png);
+        background-position: top;
+        background-repeat: no-repeat;
+      }
+
+      .top_logo {
+        width: 45px;
+      }
+      .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 35px;
+        padding: 35px;
+      }
+      .paragraphe_top {
+        width: 500px;
+        text-align: center;
+      }
+      .sous_top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 35px;
+        padding: 35px;
+      }
+      .paragraphe_sous_top {
+        width: 561px;
+        text-align: center;
+      }
+      .ecran {
+        width: 50%;
+      }
+      .centre {
+        display: flex;
+        gap: 125px;
+      }
+      .des_paragraphe {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 292px;
+        margin-top: 42px;
+      }
+      .top_deuxieme_partie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+        gap: 90px;
+      }
+      .text_deuxieme_partie {
+        margin-top: 75px;
+      }
+      .paragraphe_deuxieme_partie {
+        width: 545px;
+      }
+
+      .centre_deuxieme_partie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .block_centre_deuxieme_partie {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+        margin: 60px;
+        padding: 35px 90px;
+      }
+      .logos {
+        display: flex;
+        gap: 100px;
+        margin: 100px;
+        justify-content: center;
+      }
+      .logo {
+        height: 35px;
+      }
+      .derniere_partie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 35px;
+        padding: 35px;
+      }
+      .derniere_paragraphe {
+        width: 590px;
+        text-align: center;
+      }
+      .blocks {
+        flex: 1;
+      }
+      .footer {
+        display: flex;
+        gap: 80px;
+        padding: 25px 120px;
+      }
+      .ligne_footer {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        gap: 10px;
+      }
+      .social_media {
+        margin-left: 590px;
+        display: flex;
+        align-items: end;
+      }
     </style>
   </head>
   <body>
     <div class="clipborad">
       <div class="top_page">
-        <img src="images/logo.svg" alt="" class="top_c" />
-        <h4 class="title_top">A history of everything you copy</h4>
-        <p class="paragraphe_top">
-          Clipboard allows you to track and organize everything you copy.
-          Instantly access your clipboard on all your devices.
-        </p>
-        <div class="buttons">
-          <button class="ios">Download for iOS</button>
-          <button class="mac">Download for Mac</button>
+        <div class="top">
+          <img src="images/logo.svg" alt="" class="top_logo" />
+          <h2 class="title_top">A history of everything you copy</h2>
+          <p class="paragraphe_top">
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+          <div class="buttons">
+            <button class="ios">Download for iOS</button>
+            <button class="mac">Download for Mac</button>
+          </div>
         </div>
         <div class="sous_top">
-          <h6 class="title_top_2">Keep track of your snippets</h6>
+          <h3 class="title_top_2">Keep track of your snippets</h3>
           <p class="paragraphe_sous_top">
             Clipboard instantly stores any item you copy in the cloud, meaning
             you can access your snippets immediately on all your devices. Our
@@ -55,20 +170,20 @@
         <img src="images/image-computer.png" alt="" class="ecran" />
         <div class="des_paragraphe">
           <div class="paragraphe_centre">
-            <h6 class="title_paragraphe">Quick Search</h6>
+            <h4 class="title_paragraphe">Quick Search</h4>
             <p class="paragraphe">
               Easily search your snippets by content, category, web address,
               application, and more.
             </p>
           </div>
           <div class="paragraphe_centre">
-            <h6 class="title_paragraphe">iCloud Sync</h6>
+            <h4 class="title_paragraphe">iCloud Sync</h4>
             <p class="paragraphe">
               Instantly saves and syncs snippets across all your devices.
             </p>
           </div>
           <div class="paragraphe_centre">
-            <h6 class="title_paragraphe">Complete History</h6>
+            <h4 class="title_paragraphe">Complete History</h4>
             <p class="paragraphe">
               Retrieve any snippets from the first moment you started using the
               app.
@@ -78,51 +193,64 @@
       </div>
       <div class="deuxieme_partie">
         <div class="top_deuxieme_partie">
-          <h4 class="title_deuxieme_partie">Access Clipboard anywhere</h4>
-          <p class="paragraphe_deuxieme_partie">
-            Whether you’re on the go, or at your computer, you can access all
-            your Clipboard snippets in a few simple clicks.
-          </p>
+          <div class="text_deuxieme_partie">
+            <h3 class="title_deuxieme_partie">Access Clipboard anywhere</h3>
+            <p class="paragraphe_deuxieme_partie">
+              Whether you’re on the go, or at your computer, you can access all
+              your Clipboard snippets in a few simple clicks.
+            </p>
+          </div>
           <img src="images/image-devices.png" alt="" class="double_ecran" />
         </div>
         <div class="centre_deuxieme_partie">
-          <h6 class="title_centre_deuxieme_partie">
+          <h3 class="title_centre_deuxieme_partie">
             Supercharge your workflow
-          </h6>
+          </h3>
           <p class="paragraphe_centre_deuxieme_partie">
             We’ve got the tools to boost your productivity.
           </p>
         </div>
         <div class="block_centre_deuxieme_partie">
-          <img src="images/icon-blacklist.svg" alt="" class="block" />
-          <h6 class="title_block">Create blacklists</h6>
-          <p class="paragraphe__block">
-            Ensure sensitive information never makes its way to your clipboard
-            by excluding certain sources.
-          </p>
-          <img src="images/icon-text.svg" alt="" class="block" />
-          <h6 class="title_block">Plain text snippets</h6>
-          <p class="paragraphe__block">
-            Remove unwanted formatting from copied text for a consistent look.
-          </p>
-          <img src="images/icon-preview.svg" class="block" />
-          <h6 class="title_block">Sneak preview</h6>
-          <p class="paragraphe__block">
-            Quick preview of all snippets on your Clipboard for easy access.
-          </p>
+          <div class="blocks">
+            <img src="images/icon-blacklist.svg" alt="" class="block" />
+            <h5 class="title_block">Create blacklists</h5>
+            <p class="paragraphe__block">
+              Ensure sensitive information never makes its way to your clipboard
+              by excluding certain sources.
+            </p>
+          </div>
+          <div class="blocks">
+            <img src="images/icon-text.svg" alt="" class="block" />
+            <h5 class="title_block">Plain text snippets</h5>
+            <p class="paragraphe__block">
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </div>
+          <div class="blocks">
+            <img src="images/icon-preview.svg" class="block" />
+            <h5 class="title_block">Sneak preview</h5>
+            <p class="paragraphe__block">
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </div>
         </div>
         <div class="logos">
-          <img src="images/logo-google.png" alt="logo-google" />
-          <img src="images/logo-ibm.png" alt="logo-ibm" />
-          <img src="images/logo-microsoft.png" alt="logo-microsoft" />
-          <img src="images/logo-hp.png" alt="logo-hp" />
+          <img src="images/logo-google.png" alt="logo-google" class="logo" />
+          <img src="images/logo-ibm.png" alt="logo-ibm" class="logo" />
+          <img
+            src="images/logo-microsoft.png"
+            alt="logo-microsoft"
+            class="logo"
+          />
+          <img src="images/logo-hp.png" alt="logo-hp" class="logo" />
           <img
             src="images/logo-vector-graphics.png"
             alt="logo-vector-graphics"
+            class="logo"
           />
         </div>
         <div class="derniere_partie">
-          <h4 class="derniere_title">Clipboard for iOS and Mac OS</h4>
+          <h3 class="derniere_title">Clipboard for iOS and Mac OS</h3>
           <p class="derniere_paragraphe">
             Available for free on the App Store. Download for Mac or iOS, sync
             with iCloud and you’re ready to start adding to your clipboard.
@@ -135,7 +263,14 @@
       </div>
       <div class="footer">
         <img src="images/logo.svg" alt="" class="logo" />
-        FAQs Contact Us Privacy Policy Press Kit Install Guide
+        <div class="ligne_footer">
+          <span>FAQs</span>
+          <span>Privacy Policy</span>
+          <span> Install Guide </span>
+          <span>Contact Us</span>
+
+          <span>Press Kit</span>
+        </div>
         <div class="social_media">
           <img src="images/icon-facebook.svg" alt="icon-facebook" />
           <img src="images/icon-twitter.svg" alt="icon-twitter" />
@@ -145,7 +280,7 @@
     </div>
 
     <footer>
-      <p class="attribution">Coded by <a href="#">Your Name Here</a>.</p>
+      <p class="attribution">Coded by <a href="#">Zahra Chebbi</a>.</p>
     </footer>
   </body>
 </html>
